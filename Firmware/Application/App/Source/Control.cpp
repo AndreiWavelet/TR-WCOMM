@@ -316,6 +316,9 @@ void Control::Loop(){
 		}
 		case csPARSE_CONFIG:
 		{
+			//Request battery voltage.
+			Tasks::Battery.RequestVoltage(nullptr);
+
 			//Powerup SD Card.
 			auto sdInst = App::SDCard::GetInstance();
 			auto ok = sdInst->Enable(true);
