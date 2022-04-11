@@ -4,7 +4,7 @@ This is an electronics and firmware project for a wireless file transmission dev
 
 ## What is looks like and how it works
 
-The device is a small PCB with three LEDs in green, yellow and blue, a push button, a SD Card socket and a U.FL antenna connector. There is space for mounting a battery connector ou  directly soldering battery leads to the PCB.
+The device is a small PCB with three LEDs in green, yellow and red, a push button, a SD Card socket and a U.FL antenna connector. There is space for mounting a battery connector ou  directly soldering battery leads to the PCB.
 
 ![](./Doc/board-render.png)
 
@@ -40,7 +40,6 @@ Each led will flash in response to a successul operation, a warning or an error.
 |Green      |A successful operation has been completed, or the device is in a safe working condition. |
 |Yellow     |There has been an error but the device has recovered, or the battery is weak.            |
 |Red        |There has been an unrecoverable error (eg. SD Card failure)                              |
-|ch         |Channel to transmit and receive, 0-127             |
 
 ## Project Structure
 
