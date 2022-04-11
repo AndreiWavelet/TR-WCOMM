@@ -43,7 +43,7 @@ Each led will flash in response to a successul operation, a warning or an error.
 
 ## Project Structure
 
-The electronic schematics and board layout are located at the directory "Circuit" and the firmware code is located at the directory "Firmware". The electronic design was made with KiCad 5.1.12. The firmware design was made with STM32CubeIDE 1.9.0 and can be easily built with it. The firmware structure is further divided:
+The electronic schematics and board layout are located at the directory "Circuit" and the firmware code is located at the directory "Firmware". The electronic design was made with KiCad 5.1.12 and it's default libraries. The firmware design was made with STM32CubeIDE 1.9.0 and can be easily built with it. The firmware structure is further divided:
 
 |Firmware Folder| Contents                                                                               |
 |:-------------:|:--------------------------------------------------------------------------------------:|
