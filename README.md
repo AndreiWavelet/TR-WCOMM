@@ -71,6 +71,7 @@ The firmware is divided in two parts: drivers and applications. The drivers abst
 |NRF24L01p      |Setups and controls NRF24L01+ Transceiver IC.                                           |
 |Power          |Provide useful functions for low-power sleep and shutdown.                              |
 |SpiManager     |Manages the shared SPI bus between SD Card and NRF24L01+.                               |
+|Switches       |Provides the push button functionality with debounce and callback.                      |
 
 ### Applications Description
 
