@@ -58,7 +58,7 @@ The electronic schematics and board layout are located at the directory "Circuit
 
 The device power is expected to be fed by a 3.7 V battery. This voltage is regulated to 3.3 V to power all the board. A transistor connected to both a MCU pin and the push button allows power to flow from the battery to the rest of the circuit. The device is built around a STM32L051 MCU. The SD Card and the NRF24L01+ share the same SPI bus.
 
-The main firmware part is written in C++ and uses a simple cooperative task architecture with methods Setup() and Loop(). Once the method Setup() of all tasks is called, the core proceeds to call every Loop() function forever. Usually, inside every Loop() function, a state-machine is build using switch statements.
+The main firmware part is written in C++17 and uses a simple cooperative task architecture with methods Setup() and Loop(). Once the method Setup() of all tasks is called, the core proceeds to call every Loop() function forever. Usually, inside every Loop() function, a state-machine is build using switch statements.
 
 The firmware is divided in two parts: drivers and applications. The drivers abstract the hardware in a modular way, exposing easy to use methods for each device. The applications make use of drivers to produce useful output.
 
