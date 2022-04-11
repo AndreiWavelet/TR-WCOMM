@@ -1,5 +1,5 @@
 # TR-WCOMM
-This is a electronics and firmware project for a file transmission device based on STM32L051 MCU and NRF24L01+ Transceiver. It's goal is to be small, low power, easy to use, easy to manufacture and to be able to send files over a outdoors distance of at least 100m. 
+This is an electronics and firmware project for a wireless file transmission device based on STM32L051 MCU and NRF24L01+ Transceiver. It's goal is to be small, low power, easy to use, easy to manufacture and to be able to send files over a outdoors distance of at least 100m. 
 
 
 ## What is looks like and how it works
@@ -58,7 +58,7 @@ The electronic schematics and board layout are located at the directory "Circuit
 
 The device power is expected to be fed by a 3.7 V battery. This voltage is regulated to 3.3 V to power all the board. A transistor connected to both a MCU pin and the push button allows power to flow from the battery to the rest of the circuit. The device is built around a STM32L051 MCU. The SD Card and the NRF24L01+ share the same SPI bus.
 
-The main firmware part is written in C++17 and uses a simple cooperative task architecture with methods Setup() and Loop(). Once the method Setup() of all tasks is called, the core proceeds to call every Loop() function forever. Usually, inside every Loop() function, a state-machine is build using switch statements.
+The main firmware part is written in C++17 and uses a simple cooperative task architecture with methods Setup() and Loop(). Once the method Setup() of all tasks are called, the core proceeds to call every Loop() function forever. Usually, inside every Loop() function, a state-machine is built using switch statements.
 
 The firmware is divided in two parts: drivers and applications. The drivers abstract the hardware in a modular way, exposing easy to use methods for each device. The applications make use of drivers to produce useful output.
 
@@ -86,6 +86,6 @@ The firmware is divided in two parts: drivers and applications. The drivers abst
 
 ### Low Power Features
 
-The device features a low power oriented design. The SD Card can be turned off by a transistor to save power, and the microcontroller will go to low power stop mode when in idle state, waking up every 3 seconds, listening for any data for 1 second, and then going low power again. The NRF24L01+ Transceiver was choosen for being design-proven, flexible and, most important, low power.
+The device features a low power oriented design. The SD Card can be turned off by a transistor to save power, and the microcontroller will go to low power stop mode when in idle state, waking up every 3 seconds, listening for any data for 1 second, and then going low power again. The NRF24L01+ Transceiver was choosen for being design-proven, flexible and, most importantly, low power.
 
 
